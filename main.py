@@ -13,4 +13,7 @@ image_folder = '/app/images'  # Adjust the path based on your container's file s
 # Poppler path within the container
 poppler_path = '/usr/bin'  # Adjust the path based on your container's file structure
 
-extract_text_from_pdf(pdf_file, image_folder, poppler_path)
+text = extract_text_from_pdf(pdf_file, image_folder, poppler_path)
+
+# Print the extracted text
+print(text)

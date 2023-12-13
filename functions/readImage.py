@@ -20,6 +20,7 @@ def extract_text_from_pdf(pdf_file, image_folder, poppler_path):
     # Delete all the images
     for image_path in image_paths:
         os.remove(image_path)
+    return text
         
 # Function to extract images from a PDF
 def extract_images_from_pdf(pdf_path, image_folder, poppler_path):
